@@ -7,12 +7,34 @@ Modern web platform for Bateau École de la Loire built to replace the current w
 - Tailwind CSS
 - Node.js
 
-## Structure
+## Project Structure
 - `/app` Public pages + dashboard routes
 - `/components` UI components
 - `/services` Business logic (API layer)
 - `/lib` Utilities
 
+## App Structure
+
+app/
+├── layout.tsx
+├── globals.css
+│
+├── (public)/
+│ ├── page.tsx
+│ ├── permis/
+│ ├── tarifs/
+│ └── contact/
+│
+├── (auth)/
+│ └── login/
+│
+└── (dashboard)/
+├── layout.tsx
+├── page.tsx
+├── bookings/
+├── cart/
+└── profile/
+      
 ## Features (Planned)
 - Public website (SEO + presentation)
 - User authentication (existing system integration)
