@@ -47,7 +47,6 @@ Goal: replace the current website with a modern, conversion-focused Next.js app.
 ## Coding Principles
 
 - Keep components small and reusable
-- Avoid duplicated Tailwind classes → create UI components instead
 - Pages should only compose components (no heavy logic)
 - Business logic must be in `/services`
 - Use TypeScript strictly
@@ -55,12 +54,16 @@ Goal: replace the current website with a modern, conversion-focused Next.js app.
 
 ---
 
-## UI Guidelines
+## UI Consistency Rules (VERY IMPORTANT)
 
-- Clean and modern UI
-- Conversion-focused design (CTA, booking-oriented UX)
-- Mobile-first responsive design
-- Simple navigation (public / auth / dashboard)
+The UI must remain consistent across the entire project.
+
+Rules:
+- All buttons must use components/ui/Button
+- All layout widths must use components/ui/Container
+- All sections must follow a consistent vertical spacing system
+- Do not create ad-hoc styling per page
+- Avoid visual inconsistency between pages or components
 
 ---
 
