@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Container from "@/components/ui/Container";
 
 const included = [
   "Le livret du candidat, le livre de code et les tests en ligne",
@@ -23,7 +24,7 @@ const documents = [
 export default function TarifsInfoPanel() {
   return (
     <section className="bg-blue-950 py-14">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Container>
         <div className="grid lg:grid-cols-3 gap-10">
 
           {/* Inclus */}
@@ -119,7 +120,7 @@ export default function TarifsInfoPanel() {
             </ul>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

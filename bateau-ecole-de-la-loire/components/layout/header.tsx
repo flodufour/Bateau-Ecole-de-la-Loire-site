@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Accueil", href: "/" },
   { label: "Les permis", href: "/permis" },
   { label: "Formules & tarifs", href: "/tarifs" },
-  { label: "Dates d'examen", href: "/examens" },
+  { label: "Examens", href: "/examens" },
   { label: "Contact", href: "/contact" },
   { label: "Candidat libre", href: "/candidat-libre" },
 ];

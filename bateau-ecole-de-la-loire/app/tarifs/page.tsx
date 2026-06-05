@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Container from "@/components/ui/Container";
 import PageHero from "@/components/ui/PageHero";
 import PricingLegend from "@/components/tarifs/PricingLegend";
@@ -35,12 +36,9 @@ export default function TarifsPage() {
             <p className="mt-2 text-slate-500 text-sm">
               Tous nos prix incluent l&apos;e-learning et l&apos;inscription à l&apos;examen.
               Des questions ?{" "}
-              <a
-                href="mailto:bateauecoledelaloire@gmail.com"
-                className="text-blue-700 underline hover:text-blue-900"
-              >
+              <Link href="/contact" className="text-blue-700 underline hover:text-blue-900">
                 Contactez-nous
-              </a>
+              </Link>
               .
             </p>
           </div>

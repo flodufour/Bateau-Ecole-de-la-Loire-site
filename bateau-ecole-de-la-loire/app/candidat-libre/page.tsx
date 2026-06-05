@@ -53,12 +53,9 @@ export default function CandidatLibrePage() {
               </div>
               <p className="text-sm text-slate-500">
                 Pour plus d&apos;informations :{" "}
-                <a
-                  href="mailto:bateauecoledelaloire@gmail.com"
-                  className="text-blue-700 underline hover:text-blue-900"
-                >
-                  bateauecoledelaloire@gmail.com
-                </a>
+                <Link href="/contact" className="text-blue-700 underline hover:text-blue-900">
+                  contactez-nous
+                </Link>
               </p>
             </div>
 
@@ -81,7 +78,7 @@ export default function CandidatLibrePage() {
       </section>
 
       {/* Cities */}
-      <section className="py-16 bg-white overflow-hidden">
+      <section className="py-16 bg-white">
         <Container>
           <div className="mb-8">
             <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-2">

@@ -38,10 +38,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:bateauecole@gmail.com"
+                  href="mailto:bateauecoledelaloire@gmail.com"
                   className="hover:text-white transition-colors flex items-center gap-2"
                 >
-                  <MailIcon /> bateauecole@gmail.com
+                  <MailIcon /> bateauecoledelaloire@gmail.com
                 </a>
               </li>
             </ul>

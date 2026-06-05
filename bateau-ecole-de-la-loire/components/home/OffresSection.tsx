@@ -106,9 +106,6 @@ export default function OffresSection() {
             Tous les prix incluent la formation, les tests en ligne, le livret candidat et l&apos;inscription à l&apos;examen.{" "}
             <strong className="text-white">Aucun frais de dossier.</strong>
           </p>
-          <p className="text-sm text-green-400 font-medium mt-2">
-            −10 % pour toute inscription simultanée de 3 personnes · Paiement en 3× sans frais (chèque)
-          </p>
         </div>
       </Container>
 
