@@ -132,11 +132,13 @@ export default function OffresSection() {
               className="snap-start shrink-0 w-64 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col overflow-hidden hover:shadow-md transition-shadow"
             >
               {offer.tag ? (
-                <div className={`${offer.tagColor} text-white text-xs font-bold px-4 py-1.5 uppercase tracking-wide`}>
-                  {offer.tag}
+                <div className="bg-blue-700 px-4 py-1.5 flex items-center">
+                  <span className="text-blue-100 text-xs font-medium px-2.5 py-0.5 rounded-full">
+                    {offer.tag}
+                  </span>
                 </div>
               ) : (
-                <div className="h-[28px]" />
+                <div className="h-[29px]" />
               )}
 
               <div className="p-5 flex flex-col flex-1">

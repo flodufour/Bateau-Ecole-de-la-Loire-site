@@ -1,5 +1,5 @@
 import type { Offer, OfferMode } from "@/lib/tarifs-data";
-import Button from "@/components/ui/Button";
+import AddToCartButton from "@/components/cart/AddToCartButton";
 
 const modeBadge: Record<OfferMode, { bg: string; dot: string; label: string }> = {
   mixte: { bg: "bg-blue-100 text-blue-700", dot: "bg-blue-500", label: "Mixte" },
@@ -97,14 +97,12 @@ export default function PricingCard({ offer }: { offer: Offer }) {
         )}
 
         <div className="mt-4">
-          <Button
-            href={`/checkout?offer=${offer.id}`}
-            variant={offer.popular ? "primary" : "outline"}
-            size="md"
-            className="w-full"
-          >
-            S&apos;inscrire
-          </Button>
+          <AddToCartButton
+            offerId={offer.id}
+            title={offer.title}
+            price={offer.basePrice}
+            popular={offer.popular}
+          />
         </div>
       </div>
     </div>

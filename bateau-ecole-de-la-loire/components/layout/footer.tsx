@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
+import { version } from "@/package.json";
 
 export default function Footer() {
   return (
@@ -89,9 +90,12 @@ export default function Footer() {
       <div className="border-t border-blue-900">
         <Container className="py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-blue-400">
           <p>© 2026 Bateau École de la Loire – Permis bateau Nantes</p>
-          <Link href="/contact" className="hover:text-blue-200 transition-colors">
-            Contact
-          </Link>
+          <div className="flex items-center gap-4">
+            <span className="text-blue-700">v{version}</span>
+            <Link href="/contact" className="hover:text-blue-200 transition-colors">
+              Contact
+            </Link>
+          </div>
         </Container>
       </div>
     </footer>
