@@ -17,7 +17,7 @@ const documents = [
     icon: <FileIcon />,
   },
   {
-    label: "Timbres fiscaux (site officiel)",
+    label: "Timbres fiscaux - site officiel",
     href: "https://timbres.impots.gouv.fr/",
     icon: <ExternalIcon />,
     external: true,
