@@ -30,8 +30,8 @@ export default function PricingLegend() {
           {items.map((item) => (
             <div key={item.title} className="flex flex-col items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-6">
               <div className="flex flex-row items-start gap-3">
+                <span className="text-blue-700 shrink-0 mt-0.5">{item.icon}</span>
                 <h3 className="font-semibold text-slate-900 text-sm">{item.title}</h3>
-                <span className="text-blue-700">{item.icon}</span>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed">{item.body}</p>
             </div>

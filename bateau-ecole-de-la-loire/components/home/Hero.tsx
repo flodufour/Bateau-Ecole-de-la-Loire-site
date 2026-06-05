@@ -93,11 +93,11 @@ export default function Hero() {
               style={{ animationDelay: `${i * 120}ms` }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <h3 className="font-bold text-white text-base leading-snug">{f.title}</h3>
                 <div className="w-10 h-10 bg-blue-700 rounded-md flex items-center justify-center shrink-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={f.icon} alt="" className="w-5 h-5" aria-hidden="true" />
                 </div>
+                <h3 className="font-bold text-white text-base leading-snug">{f.title}</h3>
               </div>
               <p className="text-blue-200 text-sm leading-relaxed">{f.desc}</p>
             </div>
