@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container";
 export default function CadeauCallout() {
   return (
     <section className="bg-blue-900 text-white">
-      <Container className="py-14">
+      <Container className="py-12">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           <div className="max-w-xl">
             <p className="text-blue-300 text-sm font-semibold uppercase tracking-widest mb-2">Idée cadeau</p>

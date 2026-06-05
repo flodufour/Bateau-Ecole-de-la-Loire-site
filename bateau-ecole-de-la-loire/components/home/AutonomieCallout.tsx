@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container";
 export default function AutonomieCallout() {
   return (
     <section className="bg-blue-900 text-white">
-      <Container className="py-10">
+      <Container className="py-12">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           <div>
             <div className="flex items-center gap-2 mb-2">
