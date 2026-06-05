@@ -29,8 +29,10 @@ export default function PricingLegend() {
         <div className="grid sm:grid-cols-3 gap-6">
           {items.map((item) => (
             <div key={item.title} className="flex flex-col items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-              <span className="text-blue-700">{item.icon}</span>
-              <h3 className="font-semibold text-slate-900 text-sm">{item.title}</h3>
+              <div className="flex flex-row items-start gap-3">
+                <h3 className="font-semibold text-slate-900 text-sm">{item.title}</h3>
+                <span className="text-blue-700">{item.icon}</span>
+              </div>
               <p className="text-sm text-slate-600 leading-relaxed">{item.body}</p>
             </div>
           ))}

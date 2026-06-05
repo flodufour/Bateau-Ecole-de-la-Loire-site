@@ -4,7 +4,7 @@
 
 ### Critic
 ### Delayable
-- fix spacing in homepage-hero title/image
+- fix spacing in homepage-hero title/image & in PricingLegends
 ### Chill
 
 
@@ -17,10 +17,11 @@
 ### Fixed
 
 # Template
-## bateau-ecole-de-la-loire V1.0. [05/06/2026]
+## bateau-ecole-de-la-loire V1.0.0 [05/06/2026]
 ### Added
 - Start of the changelog
 
 ### Fixed
 - Removal of dupplicate button
-- Homepage hero card fix 
+- Homepage hero cards fix 
+- PricingLegend cards fix 
