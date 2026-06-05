@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <AutonomieCallout />
       <OffresSection />
-      <CadeauCallout />
+      <div className="grid grid-cols-1 lg:grid-cols-2 divide-y divide-blue-950 lg:divide-y-0 lg:divide-x">
+        <AutonomieCallout />
+        <CadeauCallout />
+      </div>
     </main>
   );
 }
