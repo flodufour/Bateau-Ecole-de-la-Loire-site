@@ -210,8 +210,9 @@ create table enrollment (
   id          uuid              primary key default gen_random_uuid(),
   user_id     uuid              not null references profile(id),
   program_id  uuid              not null references program(id),
-  status      enrollment_status not null default 'pending',
-  deleted_at  timestamptz,
+  status        enrollment_status not null default 'pending',
+  oedipp_number text,
+  deleted_at    timestamptz,
   created_at  timestamptz       not null default now(),
   updated_at  timestamptz       not null default now()
 );
@@ -342,8 +343,9 @@ create table exam_registration (
   permit_type    permit_type not null,
   center         text,
   exam_date      date,
-  status         exam_status not null default 'pending',
-  result_note    text,
+  status           exam_status not null default 'pending',
+  result_note      text,
+  convocation_url  text,
   created_at     timestamptz not null default now(),
   updated_at     timestamptz not null default now()
 );

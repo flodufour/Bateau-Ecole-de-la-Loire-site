@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useCart } from "./CartContext";
 
 type Props = {
@@ -11,6 +12,7 @@ type Props = {
 
 export default function AddToCartButton({ offerId, title, price, popular }: Props) {
   const { addToCart, removeFromCart, items } = useCart();
+  const router = useRouter();
   const inCart = items.some((i) => i.offerId === offerId);
 
   const handleClick = () => {
@@ -18,6 +20,7 @@ export default function AddToCartButton({ offerId, title, price, popular }: Prop
       removeFromCart(offerId);
     } else {
       addToCart({ offerId, title, price });
+      router.push("/cart");
     }
   };
 
